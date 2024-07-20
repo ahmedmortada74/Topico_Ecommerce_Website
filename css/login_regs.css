@@ -1,0 +1,152 @@
+:root {
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+}
+
+
+
+.sec_form {
+    margin: 240px 0 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form_container {
+    width: 350px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35)0 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 25px;
+}
+
+.title {
+    color: var(--dark-color);
+    text-align: center;
+    margin: 10px 0 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form input {
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    outline: 0;
+    padding: 12px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.form input:focus {
+    border-color: var(--main-color);
+}
+
+.page-kink {
+    margin: 0;
+    text-align: end;
+}
+
+.page-kink .page-link-lable {
+    color: var(--parg-color);
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+.page-kink .page-link-lable:hover {
+    color: black;
+}
+
+.form .form-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25)0 3px 8px;
+}
+
+/* .form .form-btn:hover{
+    background: transparent;
+    color:var(--dark-color);
+} */
+
+.sign-up-lable {
+    margin: 0;
+    font-size: 12px;
+    color: var(--parg-color);
+}
+
+.sign-up-lable .sign-up-link {
+    color: var(--main-color);
+    margin-left: 2px;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.buttons-container i {
+    font-size: 20px;
+
+}
+
+.apple-login-button,
+.google-login-button {
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 10px 36px 0px,
+        rgb(0, 0, 0, 0.6) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+
+}
+
+.apple-login-button {
+    background: #000;
+    border: 2px solid #000;
+    color: #fff;
+}
+
+.google-login-button {
+    border: 2px solid #7474743a;
+    color: var(--dark-color);
+}
+
+/* Responsive */
+
+@media (max-width:500px) {
+    .form_container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+}
